@@ -20,9 +20,15 @@
       var url = document.getElementById('url').value;
       Kakao.Link.scrapImage({
         imageUrl: url
-      }).then(function(res){
-          alert(res.infos.original.url);
-          document.getElementById('scrapUrl').value = res.infos.original.url
+      }).then(function(res){          
+        var info = res.infos.original;
+          alert("이미지 스크랩 완료! \n 저장 주소: " + info.url)
+          document.getElementById('scrapUrl').attr("src", info.url);
+          document.getElementById('scrapInfo').innerHTML = "이미지 정보 \n 크기: " + info.length + "이미지 포맷: " + info.content_type + "사이즈: " + info.width + " X " + info.height;
+
+          //alert("이미지 스크랩 완료! \n 저장 주소: " + res.infos.original.url)
+          //document.getElementById('scrapUrl').attr("src", res.infos.original.url);
+          //document.getElementById('scrapUrl').value = res.infos.original.length;
       });
     };
   //]]>
@@ -30,7 +36,9 @@
 </script>
 
 <input id="url" type="text" value="http://file.mk.co.kr/meet/neds/2016/04/image_readtop_2016_252765_14599184922423862.jpg">
-<input id="btn" type="button" value="이미지 찾기">
-<div id="scrapUrl"></div>
+<input id="btn" type="button" value="이미지 스크랩">
+<div id="scrapInfo">
+  <img id="scrapUrl" alt="" />
+</div>
 </body>
 </html>
