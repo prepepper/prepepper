@@ -24,14 +24,16 @@
         var info = res.infos.original;
           alert("이미지 스크랩 완료! \n저장 주소: " + info.url)
           document.getElementById('scrapImage').src = info.url;
-          document.getElementById('scrapInfo').innerHTML = "이미지 정보 <br/> 크기: " + info.length + "<br/>이미지 포맷: " + info.content_type + "<br/>사이즈: " + info.width + " X " + info.height;
+          document.getElementById('scrapInfo').innerHTML = "스크랩 이미지 정보 <br/>저장 주소: " + info.url + "<br/>크기: " + info.length + "<br/>이미지 포맷: " + info.content_type + "<br/>사이즈: " + info.width + " X " + info.height;
       });
     };
   //]]>
   }
 </script>
-
-<input id="url" type="text" value="http://dimg.donga.com/egc/CDB/WOMAN/Article/15/05/29/01/1505290118385.jpg">
+  
+<div>이미지 주소 입력</div>
+<input id="url" type="text" size="80" value="http://dimg.donga.com/egc/CDB/WOMAN/Article/15/05/29/01/1505290118385.jpg">
+<br/>
 <input id="btn" type="button" value="이미지 스크랩">
 <div id="scrapInfo"></div>
 <img id="scrapImage" src="https://icons-for-free.com/free-icons/png/512/2109157.png" alt="" />
