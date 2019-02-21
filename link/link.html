@@ -5,12 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
 <title>KakaoLink v2 Demo(Scrap Image) - Kakao JavaScript SDK</title>
-<script src="http://prepepper.cf/js/jquery-3.1.0.min.js"></script>
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 </head>
 <body>
 <script type='text/javascript'>
+  window.onload = function(){
   //<![CDATA[
     // // 사용할 앱의 JavaScript 키를 설정해 주세요.
     Kakao.init('f22de957710506d3337a5c25e0268c8f');
@@ -25,6 +25,7 @@
       });
     };
   //]]>
+  }
 </script>
 
 <input id="url" type="text" value="http://file.mk.co.kr/meet/neds/2016/04/image_readtop_2016_252765_14599184922423862.jpg">
