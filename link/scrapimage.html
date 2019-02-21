@@ -22,19 +22,19 @@
         imageUrl: url
       }).then(function(res){          
         var info = res.infos.original;
-          alert("이미지 스크랩 완료! \n 저장 주소: " + info.url)
-          document.getElementById('scrapUrl').src = info.url;
-          document.getElementById('scrapInfo').innerHTML = "이미지 정보 \n 크기: " + info.length + "이미지 포맷: " + info.content_type + "사이즈: " + info.width + " X " + info.height;
+          alert("이미지 스크랩 완료! \n저장 주소: " + info.url)
+          document.getElementById('scrapImage').src = info.url;
+          document.getElementById('scrapInfo').innerHTML = "이미지 정보 <br/> 크기: " + info.length + "<br/>이미지 포맷: " + info.content_type + "<br/>사이즈: " + info.width + " X " + info.height;
       });
     };
   //]]>
   }
 </script>
 
-<input id="url" type="text" value="http://file.mk.co.kr/meet/neds/2016/04/image_readtop_2016_252765_14599184922423862.jpg">
+<input id="url" type="text" value="http://dimg.donga.com/egc/CDB/WOMAN/Article/15/05/29/01/1505290118385.jpg">
 <input id="btn" type="button" value="이미지 스크랩">
 <div id="scrapInfo">
-  <img id="scrapUrl" alt="" />
+  <img id="scrapImage" src="https://icons-for-free.com/free-icons/png/512/2109157.png" alt="" />
 </div>
 </body>
 </html>
