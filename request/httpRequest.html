@@ -1,33 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="http://developers.kakao.com/sdk/js/kakao.min.js"></script>
- <script type="text/javascript">
- var param = "query=검색하기";
- var Url = "https://dapi.kakao.com/v2/search/web?" + param;
- var xhr = new XMLHttpRequest();
- xhr.open('GET', Url, true);
- xhr.setRequestHeader("Authorization","KakaoAK 95e54c0886defdbf7903ea122dd39dff")
- xhr.send();
- xhr.onreadystatechange = processRequest;
- function processRequest(e) {
- if (xhr.readyState == 4 && xhr.status == 200) {
- var response1 = JSON.parse(xhr.responseText);
- alert(response1);
- //document.getElementById("val1").innerHTML = response1.origin;
- //document.getElementById("val2").innerHTML = response1.url;
- }
- }
- </script>
+<head>		
+	<script src="../js/jquery-3.1.0.min.js"></script>
+	<script src="../js/jquery.paging.js"></script>
+	<script src="http://developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script type="text/javascript">		
+		var totalPage = 10;
+
+		$(function(){
+			$('#paging').paging({
+				current: 1, max: totalPage,
+				onclick:function(e,page)
+				{					
+					Search(page);
+					//location.href="";
+				}
+			});
+		});
+  
+		var search = ""
+		function Search(page){
+			search = document.getElementById("search").value;
+
+		var options = "&sort=accuracy&page=" + page + "&size=" + totalPage;
+		var Url = "https://dapi.kakao.com/v2/search/web?query=" + search + options;
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', Url, true);
+		xhr.setRequestHeader("Authorization","KakaoAK 95e54c0886defdbf7903ea122dd39dff")
+		xhr.send();
+		xhr.onreadystatechange = processRequest;
+		function processRequest(e) {
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				var response = JSON.parse(xhr.responseText);
+				var meta = response.meta;
+				var documents = response.documents;
+				var html = "";
+
+				var metaHtml = document.getElementById("meta");
+				metaHtml.innerHTML = '검색된 문서수: ' + meta.total_count +'<br/>' + '총 페이지: ' + meta.pageable_count + '<br/>';				
+							
+				for(var i = 0; i < documents.length; i++)
+				{
+					title = documents[i].title;
+					url = documents[i].url;
+					datetime = documents[i].datetime;
+					play_time = documents[i].play_time;
+					thumbnail = documents[i].thumbnail;
+					author = documents[i].author;
+
+					html += "<tr>";
+					html += "<a href=" + url + ">";
+					html += "<td>제목: </td>" + title;
+					html += "</a>";
+					html += "<td>작성일: </td>" + datetime;
+					html += "<td>시작 시간: </td>" + play_time;
+					html += "<td>썸네일: </td>" + thumbnail;
+					html += "<td>업로더: </td>" + author;
+					html += "</tr> <br/>";
+
+					contents = document.getElementById("contents");
+					//contents.innerHTML += '제목: ' + title + ' 작성일: ' + datetime + '<br/>';
+					contents.innerHTML = html;
+				}		 		 
+		}
+	}
+}
+		
+</script>
 </head>
 <body>
-<center>
- Javascript GET Request Test
-<br><br> 
- <table border="1">
- <tr><td>value1 :</td><td id="val1"></td></tr>
- <tr><td>value2 :</td><td id="val2"> </td></tr>
- </table>
- </center>
+	<center>
+		검색 해보자
+		<br><br> 
+		<table border="1">	
+		<div id="title"></div>
+			<tr><td>메타 데이터</td><td id="meta"></td></tr>
+			<tr><td>제목 검색 결과</td><td id="contents"></td></tr>			
+		</table>
+		<div id="paging"></div>
+
+		<input id="search" type="text"><input type="button" onclick="Search();" value="검색">
+	</center>
 </body>
 </html>
