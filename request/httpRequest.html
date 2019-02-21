@@ -3,13 +3,12 @@
 <head>
 <script src="http://developers.kakao.com/sdk/js/kakao.min.js"></script>
  <script type="text/javascript">
- var Url = "https://dapi.kakao.com/v2/search/web";
  var param = "query=검색하기";
+ var Url = "https://dapi.kakao.com/v2/search/web?" + param;
  var xhr = new XMLHttpRequest();
  xhr.open('GET', Url, true);
  xhr.setRequestHeader("Authorization","KakaoAK 95e54c0886defdbf7903ea122dd39dff")
-
- xhr.send(param);
+ xhr.send();
  xhr.onreadystatechange = processRequest;
  function processRequest(e) {
  if (xhr.readyState == 4 && xhr.status == 200) {
