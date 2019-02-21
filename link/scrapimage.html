@@ -23,7 +23,7 @@
       }).then(function(res){          
         var info = res.infos.original;
           alert("이미지 스크랩 완료! \n 저장 주소: " + info.url)
-          document.getElementById('scrapUrl').attr("src", info.url);
+          document.getElementById('scrapUrl').src = info.url;
           document.getElementById('scrapInfo').innerHTML = "이미지 정보 \n 크기: " + info.length + "이미지 포맷: " + info.content_type + "사이즈: " + info.width + " X " + info.height;
 
           //alert("이미지 스크랩 완료! \n 저장 주소: " + res.infos.original.url)
