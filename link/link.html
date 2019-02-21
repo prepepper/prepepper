@@ -21,6 +21,7 @@
       Kakao.Link.scrapImage({
         imageUrl: url
       }).then(function(res){
+          alert(res.infos.original.url);
           document.getElementById('scrapUrl').value = res.infos.original.url
       });
     };
@@ -30,5 +31,6 @@
 
 <input id="url" type="text" value="http://file.mk.co.kr/meet/neds/2016/04/image_readtop_2016_252765_14599184922423862.jpg">
 <input id="btn" type="button" value="이미지 찾기">
+<div id="scrapUrl"></div>
 </body>
 </html>
