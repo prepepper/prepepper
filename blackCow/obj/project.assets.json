@@ -12538,11 +12538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\뜸부기\\Desktop\\upt\\blackCow\\blackCow\\blackCow.csproj",
+      "projectUniqueName": "C:\\Users\\뜸부기\\Desktop\\upt\\blackCow\\blackCow.csproj",
       "projectName": "blackCow",
-      "projectPath": "C:\\Users\\뜸부기\\Desktop\\upt\\blackCow\\blackCow\\blackCow.csproj",
+      "projectPath": "C:\\Users\\뜸부기\\Desktop\\upt\\blackCow\\blackCow.csproj",
       "packagesPath": "C:\\Users\\뜸부기\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\뜸부기\\Desktop\\upt\\blackCow\\blackCow\\obj\\",
+      "outputPath": "C:\\Users\\뜸부기\\Desktop\\upt\\blackCow\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
