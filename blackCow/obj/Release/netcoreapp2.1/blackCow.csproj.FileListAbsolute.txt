@@ -5,7 +5,6 @@ C:\Users\뜸부기\Desktop\upt\blackCow\bin\Release\netcoreapp2.1\blackCow.dll
 C:\Users\뜸부기\Desktop\upt\blackCow\bin\Release\netcoreapp2.1\blackCow.pdb
 C:\Users\뜸부기\Desktop\upt\blackCow\bin\Release\netcoreapp2.1\blackCow.Views.dll
 C:\Users\뜸부기\Desktop\upt\blackCow\bin\Release\netcoreapp2.1\blackCow.Views.pdb
-C:\Users\뜸부기\Desktop\upt\blackCow\obj\Release\netcoreapp2.1\blackCow.csprojAssemblyReference.cache
 C:\Users\뜸부기\Desktop\upt\blackCow\obj\Release\netcoreapp2.1\blackCow.csproj.CoreCompileInputs.cache
 C:\Users\뜸부기\Desktop\upt\blackCow\obj\Release\netcoreapp2.1\blackCow.RazorAssemblyInfo.cache
 C:\Users\뜸부기\Desktop\upt\blackCow\obj\Release\netcoreapp2.1\blackCow.RazorAssemblyInfo.cs

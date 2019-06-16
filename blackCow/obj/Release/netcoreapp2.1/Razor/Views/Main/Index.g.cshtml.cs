@@ -163,12 +163,12 @@ using blackCow.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(3486, 201, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "807af627c7234a0caa603a9ab3940d38", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd297dd886dc479d8bd28cc8889e4cb2", async() => {
                 BeginContext(3492, 68, true);
                 WriteLiteral("\r\n    <div class=\"main\">\r\n        <h2>흑우 코인 ver 1.0.0</h2>\r\n        ");
                 EndContext();
                 BeginContext(3560, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "09f929b556b24e1d99f75d373584d5a7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "aa027d140d9443caa6132c6c38014535", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

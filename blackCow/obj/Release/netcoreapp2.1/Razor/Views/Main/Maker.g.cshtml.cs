@@ -61,7 +61,7 @@ using blackCow.Models;
             WriteLiteral("\r\n<div class=\"title\">만든이</div>\r\n\r\n\r\n<div class=\"content\">\r\n    <div>\r\n        양천구 <span style=\"background-color:yellow;\">진성 흑우</span> : <a href=\"http://fow.kr/find/뜸부기\">뜸부기</a>\r\n    </div>\r\n    <div>\r\n        <a href=\"http://fow.kr/find/뜸부기\">");
             EndContext();
             BeginContext(281, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "62353bae45a94e2d833a0c08bfb3a358", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "dfa635efecf84e97a1cf22dce7fb8e29", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

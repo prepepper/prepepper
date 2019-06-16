@@ -60,7 +60,7 @@ using blackCow.Models;
             WriteLiteral("\r\n<div class=\"mainTitle\">흑우의 역사</div>\r\n\r\n<div>\r\n    <div class=\"title\">1. 黑牛</div>\r\n<pre><span class=\"title\">黑牛(흑우)</span> \r\n말그대로 털의 빛깔이 검은 [[소]]를 의미한다.</pre>\r\n</div>\r\n \r\n<div>");
             EndContext();
             BeginContext(218, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "376bbab8f41b4644b3f2317df9428b79", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0d85bbd8ce504140b240c2e7eea0b1eb", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
