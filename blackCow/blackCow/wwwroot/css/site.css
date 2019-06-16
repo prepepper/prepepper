@@ -1,0 +1,73 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #ededed;
+}
+
+li {
+    font-weight: bold;
+}
+
+tr {
+    font-weight: bold;
+}
+
+div.main{    
+    margin: 10px;
+    border-style:dotted;
+    border-width:2px;
+}
+
+.mainImg {
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;    
+}
+
+#market {
+    margin: 10px;
+    border-style: solid;
+}
+
+
+button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.buy {
+    color: white;
+    font-weight: bold;
+    background-color: #d60000;
+}
+
+.sell {
+    color: white;
+    font-weight: bold;
+    background-color: #0051c7;
+}
+
+.mainTitle {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.content {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px;    
+}
