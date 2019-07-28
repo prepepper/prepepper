@@ -2,7 +2,7 @@ canvas {
     display: block;
     margin: auto;
     border: 1px solid black;
-    background-image: url('teemoback.jpg');
+    background-image: url('./images/teemoback.jpg');
     background-size: 150px;    
     background-repeat: no-repeat;
     background-position: 50%;
