@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>티모의 기묘한 테트리스</title>
+        <link rel='stylesheet' href='style.css' />
+    </head>
+    <body>        
+        <div id="gameboard">
+            <div id="title">티모의 기묘한 테트리스 <br> Ver 1.0.0</div>
+            <div id="scoreboard" style="visibility: hidden;"><span>점수: </span><span id="currentScore"></span></div>
+            <canvas width='300' height='600'></canvas>
+            <button id="playbutton" onclick="playButtonClicked();">게임 시작</button>
+        </div>
+        <a href="#" id="teemovoice">
+            <img src="mushroom.jpg" id="mushroom">
+            <div>티모 재생</div>
+        </a>
+        <a href="#" id="howtoplay">
+            <img src="mushroom.jpg" id="mushroom">
+            <div>플레이 방법</div>
+        </a>
+        <div id="knowhow" style="visibility: hidden;">스페이스바 + 방향키를 <br>이용해 점수를 획득해보자 <br><br> 2000점 획득 시 승리!</div>        
+        <script src='js/tetris.js'></script>
+        <script src='js/controller.js'></script>
+        <script src='js/render.js'></script>
+    </body>
+</html>

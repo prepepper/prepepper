@@ -1,0 +1,91 @@
+canvas {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    background-image: url('teemoback.jpg');
+    background-size: 150px;    
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+#playbutton {
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#title{
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: navy;
+    font-style: italic;
+    padding: 30px;
+}
+
+#gameboard{
+    background: azure;
+    width: 500px;
+    height: 850px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+
+body{
+    background: linear-gradient( to right, #acd5e8, #a3ffcc );
+}
+
+#scoreboard{
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 27px;
+    font-weight: bold;    
+    color: #46bb45;
+}
+
+#teemovoice{
+    margin-left: 400px;
+    margin-top: 300px;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f129b1;
+    text-align: center;
+}
+
+#howtoplay{        
+    margin-left: 400px;
+    margin-top: 500px;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f129b1;
+    text-align: center;
+}
+
+#knowhow{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rebeccapurple;
+    text-align: center;
+    border: dotted 3px mediumvioletred;
+    width: 295px;
+}
+
+#mushroom{
+    width: 120px;
+    border: solid 5px white;
+    border-radius: 50px;
+}
