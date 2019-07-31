@@ -156,6 +156,7 @@
       window.addEventListener("load", initialize, false);
       window.addEventListener("keydown", getKeyDown, false);
       window.addEventListener("keyup", getKeyUp, false);
+      window.onload = setAudio();
             
       function initialize()
       { 
@@ -180,6 +181,8 @@
 
         // 게임 시작 메시지
         startMessage();
+        // 배경음 설정        
+        setAudio();
         // 이미지 설정
         setImage();
         // 반복 동작 설정
@@ -214,7 +217,7 @@
               startGame();
             };*/
           }
-          countdown(4);
+          //countdown(4);
         }   
 
         document.getElementById('btn2').onclick = function()
@@ -475,6 +478,13 @@
 
       ez = new Image();
       ez.src = "ez.jpg";
+    }
+
+    function setAudio()
+    {      
+      var backgroundAudio = new Audio('henesys.mp3');
+      backgroundAudio.loop = true;
+      backgroundAudio.play();      
     }
 
     function startMessage()
